@@ -14,11 +14,12 @@ var lucy = {
 		localStorage.removeItem('lucy');
 		return 'Empty DB';
 	},
-	find: function(prop,term){
+	find: function(term){
 		var lucyStore = JSON.parse(localStorage.lucy);
-		console.log(lucyStore);
 		for(prop in lucyStore){
-			console.log('prop: '+prop);
+			if(lucyStore[prop].name == term){
+				console.log(lucyStore[prop]);
+			}
 		}
 	},
 	add: function(obj){
@@ -41,4 +42,4 @@ lucy.add(newPerson);
 var newPerson = {'uid':'g58','name':'suze'};
 lucy.add(newPerson);
 
-lucy.find('name','suze');
+lucy.find('suze');
