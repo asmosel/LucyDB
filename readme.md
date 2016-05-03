@@ -14,10 +14,10 @@ Include the file in your project to begin using. This implementation is written 
 
 This software currently has two main functions to use; 'add' and 'find'. 
 
-#'add' -- lucy.add(object)
+###'add' -- lucy.add(object)
 This is used to simply add an item to the LocalStorage system under the 'lucy' item. Each added object requires a UID, this is not currently checked as unique but will be in future development, for reasons.
 
-#'find' -- lucy.find('Susan')
+###'find' -- lucy.find('Susan')
 This function finds the object relating to the term you supply. To do this it iterates of the properties of the objects stored in the 'database'. Development will focus on this area as the function may be used more heavily in personal uses of this slice of code.
 
 ## Contributors
