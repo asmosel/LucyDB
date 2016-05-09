@@ -12,13 +12,15 @@ var lucy = {
 	},
 	empty: function(){
 		localStorage.removeItem('lucy');
+		lucy.init();
 		return 'Empty DB';
 	},
-	find: function(term){
+	find: function(propertyName, term){
+		console.log(propertyName);
 		var lucyStore = JSON.parse(localStorage.lucy);
 		for(prop in lucyStore){
-			if(lucyStore[prop].name == term){
-				console.log(lucyStore[prop]);
+			if(lucyStore[prop][propertyName] == term){
+				return lucyStore[prop];
 			}
 		}
 	},
@@ -27,19 +29,12 @@ var lucy = {
 		var cur = JSON.parse(lucyStore);
 		cur[obj.uid]=obj;
 		localStorage.setItem('lucy',JSON.stringify(cur));
+	},
+	del: function(uid){
+		var uid = uid;
+		var lucyStore = JSON.parse(localStorage.lucy);
+		delete lucyStore[uid];
+		localStorage.setItem('lucy',JSON.stringify(lucyStore));
 	}
 }
-
-
-
-
-
 lucy.init();
-var newPerson = {'uid':'g56','name':'peter'};
-lucy.add(newPerson);
-var newPerson = {'uid':'g57','name':'trev'};
-lucy.add(newPerson);
-var newPerson = {'uid':'g58','name':'suze'};
-lucy.add(newPerson);
-
-lucy.find('suze');
