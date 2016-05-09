@@ -16,7 +16,6 @@ var lucy = {
 		return 'Empty DB';
 	},
 	find: function(propertyName, term){
-		console.log(propertyName);
 		var lucyStore = JSON.parse(localStorage.lucy);
 		for(prop in lucyStore){
 			if(lucyStore[prop][propertyName] == term){
