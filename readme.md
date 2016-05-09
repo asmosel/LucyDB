@@ -14,7 +14,7 @@ This software currently has two main functions to use; 'add' and 'find'.
 This is used to simply add an item to the LocalStorage system under the 'lucy' item. Each added object requires a UID, this is not currently checked as unique but will be in future development, for reasons.
 
 ####'find' -- lucy.find(propertyName, 'Susan')
-This function finds the object relating to the term you supply. To do this it iterates of the properties of the objects stored in the 'database'. Development will focus on this area as the function may be used more heavily in personal uses of this slice of code. In the above case propertyName would beequal to 'name'.
+This function finds the object relating to the term you supply. To do this it iterates of the properties of the objects stored in the 'database'. Development will focus on this area as the function may be used more heavily in personal uses of this slice of code. In the above case propertyName would be equal to 'name'.
 
 ## Contributors
 
