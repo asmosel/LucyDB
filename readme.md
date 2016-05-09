@@ -2,10 +2,6 @@
 
 This JavaScript file will *eventually* be a simple, clean and efficient way to access LocalStorage as a Loose Database -- LucyDB. 
 
-## Code Example
-
-This library allows code to treat LocalStorage as a suitable place to store JavaScript objects in a none-indexed databse type implementation: shown in API reference below.
-
 ## Installation
 
 Include the file in your project to begin using. This implementation is written in vanilla JavaScript and should work on any browser supporting LocalStorage. The support of LocalStorage is not currently performed as part of this file.
@@ -14,13 +10,6 @@ Include the file in your project to begin using. This implementation is written 
 
 This software currently has two main functions to use; 'add' and 'find'. 
 
-'add' -- lucy.add(object)
-
-This is used to simply add an item to the LocalStorage system under the 'lucy' item. Each added object requires a UID, this is not currently checked as unique but will be in future development, for reasons.
-
-'find' -- lucy.find('Susan')
-
-=======
 ####'add' -- lucy.add(object)
 This is used to simply add an item to the LocalStorage system under the 'lucy' item. Each added object requires a UID, this is not currently checked as unique but will be in future development, for reasons.
 
