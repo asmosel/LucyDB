@@ -4,7 +4,7 @@ This JavaScript file will *eventually* be a simple, clean and efficient way to a
 
 ## Usage
 
-Include the file in your project to begin using. This implementation is written in vanilla JavaScript and should work on any browser supporting LocalStorage. The support of LocalStorage is not currently performed as part of this file.
+Include the file in your project to begin using. This implementation is written in vanilla JavaScript and should work on any browser supporting LocalStorage. The support of LocalStorage is not currently checked as part of this file, do that yourself if you want. This will be expanded to provide a fallback, maybe.
 
 ## API Reference
 
