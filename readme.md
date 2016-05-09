@@ -1,8 +1,8 @@
-## Synopsis
+## What's the point?
 
 This JavaScript file will *eventually* be a simple, clean and efficient way to access LocalStorage as a Loose Database -- LucyDB. 
 
-## Installation
+## Usage
 
 Include the file in your project to begin using. This implementation is written in vanilla JavaScript and should work on any browser supporting LocalStorage. The support of LocalStorage is not currently performed as part of this file.
 
